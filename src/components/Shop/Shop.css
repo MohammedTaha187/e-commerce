@@ -1,0 +1,56 @@
+.Shop img {
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.Shop img:hover {
+  transform: scale(1.05);
+}
+
+.Shop {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(53, 46, 46, 0.1);
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+}
+
+.Shop:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.Shop h2 {
+  font-size: 1.25rem;
+  color: #2e8b57;
+  font-weight: bold;
+  padding: 1rem;
+  margin: 0;
+}
+
+.color-ring-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.row.g-5 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.col-md-3 {
+  flex: 1 1 calc(25% - 1.25rem); 
+  margin-bottom: 1.25rem;
+}
+
+.alert.alert-danger {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  color: #721c24;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
