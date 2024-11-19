@@ -9,7 +9,7 @@ function NavBar() {
   return <>
     <nav className="navbar navbar-expand-lg bg-dark navbar-dark text-white">
       <div className="container">
-        <Link className="nav-link" to={'/home'}><i className="fa-solid fa-cart-shopping" style={{color: '#95a0b1'}} />Shop </Link>
+        <Link className="nav-link" to={'/'}><i className="fa-solid fa-cart-shopping" style={{color: '#95a0b1'}} />Shop </Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon" />
         </button>
