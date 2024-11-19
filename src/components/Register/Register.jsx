@@ -13,7 +13,7 @@ export default function Register() {
     async function callRegister(reqBody) {
         setIsLoading(true)
         try {
-            const res = await axios.post('http://localhost:5000/users', reqBody)
+            const res = await axios.post('https://de20c983-e204-41ff-8ac8-ff32b1e8b12f-00-3anh942776nda.picard.replit.dev/users', reqBody)
             
             if (res.status === 201) {
                 navigate('/home')

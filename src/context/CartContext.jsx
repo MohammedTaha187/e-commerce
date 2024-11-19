@@ -4,8 +4,10 @@ import { toast } from "react-hot-toast";
 
 export let CartContext = createContext();
 
+const API_BASE_URL = "https://de20c983-e204-41ff-8ac8-ff32b1e8b12f-00-3anh942776nda.picard.replit.dev"; // رابط Replit
+
 function addToCart(product) {
-    return axios.post('http://localhost:5000/cart', {
+    return axios.post(`${API_BASE_URL}/cart`, {
         ...product,
         count: 1
     }).then((res) => res).catch((err) => err);
@@ -13,7 +15,7 @@ function addToCart(product) {
 
 function getCart() {
     return axios
-        .get("http://localhost:5000/cart")
+        .get(`${API_BASE_URL}/cart`)
         .then((res) => res.data)
         .catch((err) => {
             console.error("Error fetching cart:", err);
@@ -23,7 +25,7 @@ function getCart() {
 
 function deleteFromCart(id) {
     return axios
-        .delete(`http://localhost:5000/cart/${id}`)
+        .delete(`${API_BASE_URL}/cart/${id}`)
         .then((res) => res.data)
         .catch((err) => {
             console.error("Error deleting from cart:", err);
@@ -33,7 +35,7 @@ function deleteFromCart(id) {
 
 function updateFromCart(id, count) {
     return axios
-        .patch(`http://localhost:5000/cart/${id}`, {
+        .patch(`${API_BASE_URL}/cart/${id}`, {
             count: count,
         })
         .then((res) => res.data)
@@ -45,10 +47,10 @@ function updateFromCart(id, count) {
 
 function clearCart() {
     return axios
-        .get("http://localhost:5000/cart")
+        .get(`${API_BASE_URL}/cart`)
         .then((res) => {
             const deleteRequests = res.data.map((item) =>
-                axios.delete(`http://localhost:5000/cart/${item.id}`)
+                axios.delete(`${API_BASE_URL}/cart/${item.id}`)
             );
             return Promise.all(deleteRequests);
         })
