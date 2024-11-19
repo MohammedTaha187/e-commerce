@@ -1,5 +1,5 @@
 import {
-  createHashRouter,
+  createBrowserRouter,
   Navigate,
   RouterProvider,
 } from "react-router-dom";
@@ -15,7 +15,7 @@ import CheckOut from "./components/CheckOut/CheckOut";
 import Contact from "./components/Contact/Contact";
 
 function App() {
-  let routes = createHashRouter(
+  let routes = createBrowserRouter(
     [
       {
         path: "",
