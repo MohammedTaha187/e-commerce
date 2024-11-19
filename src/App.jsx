@@ -1,8 +1,4 @@
-import {
-  createBrowserRouter,
-  Navigate,
-  RouterProvider,
-} from "react-router-dom";
+import { createHashRouter, Navigate,RouterProvider} from "react-router-dom";
 import "./App.css";
 import Layout from "./components/Layout/Layout";
 import Home from "./components/Home/Home";
@@ -14,21 +10,21 @@ import Details from "./components/Details/Details";
 import CheckOut from "./components/CheckOut/CheckOut";
 import Contact from "./components/Contact/Contact";
 function App() {
-  let routes = createBrowserRouter(
+  let routes = createHashRouter(
     [
       {
         path: "",
         element: <Layout />,
         children: [
-          { path: "", element: <Home /> },
-          { path: "", element: <Shop /> },
-          { path: "", element: <About /> },
-          { path: "", element: <Details /> },
-          { path: "", element: <Register /> },
-          { path: "", element: <Cart /> },
-          { path: "", element: <CheckOut /> },
-          { path: "", element: <Contact /> },
-          { path: "", element: <Navigate to="/" replace /> },
+          { path: "", element: <Home /> },  
+          { path: "shop", element: <Shop /> },  
+          { path: "about", element: <About /> },
+          { path: "details/:prefix", element: <Details /> },
+          { path: "register", element: <Register /> },
+          { path: "cart", element: <Cart /> },
+          { path: "checkout", element: <CheckOut /> },
+          { path: "contact", element: <Contact /> },
+          { path: "", element: <Navigate to="/" replace /> },  
         ],
       },
     ],
