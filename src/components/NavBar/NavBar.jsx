@@ -16,26 +16,26 @@ function NavBar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link className="nav-link" to={''}>Home</Link>
+              <Link className="nav-link" to={'/home'}>Home</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to={''}>Shop</Link>
+              <Link className="nav-link" to={'/shop'}>Shop</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to={''}>About</Link>
+              <Link className="nav-link" to={'/about'}>About</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to={''}>Contact</Link>
+              <Link className="nav-link" to={'/contact'}>Contact</Link>
             </li>
           </ul>
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link className="nav-link" to={''}>
+              <Link className="nav-link" to={'/register'}>
                 <i className="fa-regular fa-registered" style={{color: '#8893a5'}} />
               </Link>
             </li>
             <li className="nav-item position-relative">
-              <Link className="nav-link" to={''}>
+              <Link className="nav-link" to={'/cart'}>
               <i className="fa-solid fa-cart-shopping"></i>
                 {cartDetails?.length > 0 && (
                   <span className="badge bg-danger position-absolute top-0 start-100 translate-middle">
