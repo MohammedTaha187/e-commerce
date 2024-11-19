@@ -33,7 +33,7 @@ function App() {
         ],
       },
     ],
-    // { basename: "/e-commerce" }
+    { basename: "/e-commerce" }
   );
 
   return <RouterProvider router={routes} />;
