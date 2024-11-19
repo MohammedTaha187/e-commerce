@@ -17,7 +17,7 @@ function App() {
         path: "",
         element: <Layout />,
         children: [
-          { path: "", element: <Home /> },
+          { path: "home", element: <Home /> },
           { path: "shop", element: <Shop /> },
           { path: "about", element: <About /> },
           { path: "details/:prefix", element: <Details /> },
