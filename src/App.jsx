@@ -1,4 +1,8 @@
-import { createBrowserRouter, Navigate,RouterProvider} from "react-router-dom";
+import {
+  createBrowserRouter,
+  Navigate,
+  RouterProvider,
+} from "react-router-dom";
 import "./App.css";
 import Layout from "./components/Layout/Layout";
 import Home from "./components/Home/Home";
@@ -16,15 +20,15 @@ function App() {
         path: "",
         element: <Layout />,
         children: [
-          { path: "", element: <Home /> },  
-          { path: "", element: <Shop /> },  
+          { path: "", element: <Home /> },
+          { path: "", element: <Shop /> },
           { path: "", element: <About /> },
           { path: "", element: <Details /> },
           { path: "", element: <Register /> },
           { path: "", element: <Cart /> },
           { path: "", element: <CheckOut /> },
           { path: "", element: <Contact /> },
-          { path: "", element: <Navigate to="/" replace /> },  
+          { path: "", element: <Navigate to="/" replace /> },
         ],
       },
     ],
