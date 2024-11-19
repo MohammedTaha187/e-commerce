@@ -11,12 +11,12 @@ export default function CheckOut() {
         setIsLoading(true)
         try {
             const res = await axios.post('https://de20c983-e204-41ff-8ac8-ff32b1e8b12f-00-3anh942776nda.picard.replit.dev/orders', reqBody)
-            console.log(res)
+        
             toast.success('Order has been placed')
             await clearCart()
             setIsLoading(false)
         } catch (error) {
-            console.log(error)
+         
             toast.error('Your Order could not be created')
             setIsLoading(false)
         }
@@ -28,7 +28,7 @@ export default function CheckOut() {
             const deleteRequests = cartItems.data.map(item => axios.delete(`http://localhost:3000/cart/${item.id}`))
             await Promise.all(deleteRequests)
         } catch (error) {
-            console.log("Failed to clear cart:", error)
+          
         }
     }
 
