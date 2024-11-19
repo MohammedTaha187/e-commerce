@@ -1,4 +1,4 @@
-import { createHashRouter, Navigate,RouterProvider} from "react-router-dom";
+import { createBrowserRouter, Navigate,RouterProvider} from "react-router-dom";
 import "./App.css";
 import Layout from "./components/Layout/Layout";
 import Home from "./components/Home/Home";
@@ -10,7 +10,7 @@ import Details from "./components/Details/Details";
 import CheckOut from "./components/CheckOut/CheckOut";
 import Contact from "./components/Contact/Contact";
 function App() {
-  let routes = createHashRouter(
+  let routes = createBrowserRouter(
     [
       {
         path: "",
