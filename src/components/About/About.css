@@ -1,0 +1,45 @@
+.about-page h2 {
+    color: #333;
+  }
+  
+  .about-page h1 {
+    color: #fff;
+  }
+  
+  .hero-section {
+    background-color: #007bff;
+  }
+  
+  .hero-section .container {
+    color: white;
+  }
+  
+  .about-page-subheading {
+    color: #007bff;
+  }
+  
+  .about-page-values-title, .about-page-team-name {
+    color: #333;
+  }
+  
+  .about-page-values-text, .about-page-paragraph {
+    color: #555;
+  }
+  
+  .contact-info h2 {
+    color: #007bff;
+  }
+  
+  .contact-info p {
+    color: #333;
+  }
+  
+  .contact-info a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  

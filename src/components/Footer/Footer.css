@@ -1,0 +1,27 @@
+footer {
+  background-color: #222;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+footer .text-success {
+  font-weight: bold;
+}
+
+footer a {
+  color: #aaa;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+.social-icons i {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.social-icons i:hover {
+  transform: scale(1.2);
+}
