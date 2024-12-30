@@ -7,7 +7,11 @@ import './Shop.css'
 
 export default function Shop() {
   function getAllShop() {
+<<<<<<< HEAD
     return axios.get('http://localhost:5000/categories');
+=======
+    return axios.get('https://de20c983-e204-41ff-8ac8-ff32b1e8b12f-00-3anh942776nda.picard.replit.dev/categories');
+>>>>>>> a740c6c1a2f63e91efa7eb0cfde58e583e6037be
   }
 
   const { isLoading, isError, data, isFetching, refetch } = useQuery('Shop', getAllShop, {});

@@ -10,7 +10,11 @@ export default function Details() {
   let params = useParams();
 
   function getSpecificCategory(prefix) {
+<<<<<<< HEAD
     return axios.get(`http://localhost:5000/products?cat_prefix=${prefix}`);
+=======
+    return axios.get(`https://de20c983-e204-41ff-8ac8-ff32b1e8b12f-00-3anh942776nda.picard.replit.dev/products?cat_prefix=${prefix}`);
+>>>>>>> a740c6c1a2f63e91efa7eb0cfde58e583e6037be
   }
 
   let { isLoading, isError, data } = useQuery("specificCategory", () =>getSpecificCategory(params.prefix));
@@ -76,4 +80,8 @@ export default function Details() {
       )}
     </div>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> a740c6c1a2f63e91efa7eb0cfde58e583e6037be
