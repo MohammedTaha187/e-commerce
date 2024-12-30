@@ -1,78 +1,17 @@
 {
-  "users": [
-    {
-      "id": "062c",
-      "name": "‪Mohammed Taha‬‏",
-      "email": "ant833292@gmail.com",
-      "password": "A115599",
-      "repassword": "A115599",
-      "phone": "01212299383"
-    }
-  ],
-<<<<<<< HEAD
+  "users": [],
   "cart": [
     {
-      "id": "1",
-      "title": "Regular Fit Jersey top",
-      "price": "249.00",
-      "cat_prefix": "men",
-      "img": "https://eg.hm.com/assets/styles/HNM/14482498/6103a8463876770c30cdba3535b7be1f333315fe/2/image-thumb__3464789__product_listing/cb91f8f128ac2125e0ec3a008a2e8d2497d15434.jpg",
-      "count": 1
-    },
-    {
-      "id": "1",
-      "title": "Regular Fit Jersey top",
-      "price": "249.00",
-      "cat_prefix": "men",
-      "img": "https://eg.hm.com/assets/styles/HNM/14482498/6103a8463876770c30cdba3535b7be1f333315fe/2/image-thumb__3464789__product_listing/cb91f8f128ac2125e0ec3a008a2e8d2497d15434.jpg",
-      "count": 1
-    },
-    {
-      "id": "1",
-      "title": "Regular Fit Jersey top",
-      "price": "249.00",
-      "cat_prefix": "men",
-      "img": "https://eg.hm.com/assets/styles/HNM/14482498/6103a8463876770c30cdba3535b7be1f333315fe/2/image-thumb__3464789__product_listing/cb91f8f128ac2125e0ec3a008a2e8d2497d15434.jpg",
-      "count": 1
-    },
-    {
-      "id": "1",
-      "title": "Regular Fit Jersey top",
-      "price": "249.00",
-      "cat_prefix": "men",
-      "img": "https://eg.hm.com/assets/styles/HNM/14482498/6103a8463876770c30cdba3535b7be1f333315fe/2/image-thumb__3464789__product_listing/cb91f8f128ac2125e0ec3a008a2e8d2497d15434.jpg",
-      "count": 1
-    },
-    {
-      "id": "1",
-      "title": "Regular Fit Jersey top",
-      "price": "249.00",
-      "cat_prefix": "men",
-      "img": "https://eg.hm.com/assets/styles/HNM/14482498/6103a8463876770c30cdba3535b7be1f333315fe/2/image-thumb__3464789__product_listing/cb91f8f128ac2125e0ec3a008a2e8d2497d15434.jpg",
-      "count": 1
-    },
-    {
-      "id": "1",
-      "title": "Regular Fit Jersey top",
-      "price": "249.00",
-      "cat_prefix": "men",
-      "img": "https://eg.hm.com/assets/styles/HNM/14482498/6103a8463876770c30cdba3535b7be1f333315fe/2/image-thumb__3464789__product_listing/cb91f8f128ac2125e0ec3a008a2e8d2497d15434.jpg",
+      "id": "13",
+      "title": "Wide twill trousers",
+      "price": "599.00",
+      "cat_prefix": "women",
+      "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:76f0295c-2c2d-410c-92cb-2ab47b633ec3/as/EID-3534db040ac2a39e52b066436ba51c1d87437ca2.jpg?width=450&height=675&preferwebp=true",
       "count": 1
     }
   ],
-=======
-  "cart": [],
->>>>>>> a740c6c1a2f63e91efa7eb0cfde58e583e6037be
   "Contact": [],
-  "orders": [
-    {
-      "id": "103c",
-      "userName": "mohammed",
-      "Addres": "cairo",
-      "Details": "large",
-      "Phone": "01212299363"
-    }
-  ],
+  "orders": [],
   "categories": [
     {
       "id": "1",

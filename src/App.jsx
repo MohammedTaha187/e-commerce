@@ -1,4 +1,4 @@
-import { createBrowserRouter, Navigate,RouterProvider} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import Layout from "./components/Layout/Layout";
 import Home from "./components/Home/Home";
@@ -11,28 +11,23 @@ import CheckOut from "./components/CheckOut/CheckOut";
 import Contact from "./components/Contact/Contact";
 
 function App() {
-  let routes = createBrowserRouter(
-    [
-      {
-        path: "",
-        element: <Layout />,
-        children: [
-          { path: "/home", element: <Home /> },
-          { path: "shop", element: <Shop /> },
-          { path: "about", element: <About /> },
-          { path: "details/:prefix", element: <Details /> },
-          { path: "register", element: <Register /> },
-          { path: "cart", element: <Cart /> },
-          { path: "checkout", element: <CheckOut /> },
-          { path: "contact", element: <Contact /> },
-          { path: "", element: <Navigate to="/home" replace /> },
-        ],
-      },
-    ],
-    { basename: "/e-commerce" }
-  );
+ let routes = createBrowserRouter([
+  {path:"" , element:<Layout/> , children:[
+    {path:"/" , element:<Home/>},
+    {path:"/shop" , element:<Shop/>},
+    {path:"/about" , element:<About/>},
+    {path:'details/:prefix' , element:<Details/>},
+    {path:"/register" , element:<Register/>},
+    {path:"cart" , element:<Cart/>},
+    {path: "checkout" , element:<CheckOut/>} ,
+    {path:"contact" , element:<Contact/>},
 
-  return <RouterProvider router={routes} />;
+
+
+  ]}
+ ])
+
+  return <RouterProvider router={routes}/>
 }
 
 export default App;
