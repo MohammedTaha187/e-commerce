@@ -24,8 +24,12 @@ function App() {
 
 
 
-  ]}
- ])
+  ],
+},
+  
+ ],
+ { basename: "e-commerce" }
+);
 
   return <RouterProvider router={routes}/>
 }
