@@ -20,15 +20,11 @@ function App() {
     {path:"/register" , element:<Register/>},
     {path:"cart" , element:<Cart/>},
     {path: "checkout" , element:<CheckOut/>} ,
-    {path:"contact" , element:<Contact/>},
+    {path:"contact" , element:<Contact/>}
 
 
-
-  ],
-},
-  
- ],
-);
+  ]}
+ ])
 
   return <RouterProvider router={routes}/>
 }
