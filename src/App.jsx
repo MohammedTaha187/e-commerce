@@ -10,21 +10,29 @@ import Details from "./components/Details/Details";
 import CheckOut from "./components/CheckOut/CheckOut";
 import Contact from "./components/Contact/Contact";
 
+function ErrorBoundary({ error }) {
+  return <div>حدث خطأ: {error.message}</div>;
+}
+
 function App() {
- let routes = createBrowserRouter([
-  {path:"" , element:<Layout/> , children:[
-    {path:"/" , element:<Home/>},
-    {path:"/shop" , element:<Shop/>},
-    {path:"/about" , element:<About/>},
+  const routes = createBrowserRouter([
+  {path:"/" , element:<Layout/> , errorElement: <ErrorBoundary />, children:[
+    { path: "", element: <Home /> },
+    {path:"home" , element:<Home/>},
+    {path:"shop" , element:<Shop/>},
+    {path:"about" , element:<About/>},
     {path:'details/:prefix' , element:<Details/>},
-    {path:"/register" , element:<Register/>},
+    {path:"register" , element:<Register/>},
     {path:"cart" , element:<Cart/>},
     {path: "checkout" , element:<CheckOut/>} ,
     {path:"contact" , element:<Contact/>}
 
 
   ]}
- ])
+ ],
+ { basename: "/e-commerce" }
+
+)
 
   return <RouterProvider router={routes}/>
 }
